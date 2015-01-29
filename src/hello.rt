@@ -1,1 +1,9 @@
-<h2>Hello React Templates</h2>
+<rt-require dependency="treeView" as="TreeView"/>
+<rt-require dependency="helloTreeNode.rt" as="helloNodeTemplate"/>
+
+<div>
+    <TreeView nodes="{this.getSampleNodes()}"
+              childrenSelector="nodes"
+              nodeTemplate="{helloNodeTemplate}"
+              />
+</div>

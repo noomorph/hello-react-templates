@@ -1,0 +1,7 @@
+<li className="ux-treeview-node" rt-scope="this.getTreeViewClass() as TreeView">
+    <span onClick="() => this.toggleCollapsed()">
+        {this.props.text}
+    </span>
+
+    <TreeView rt-if="!this.state.collapsed" rt-props="this.props" />
+</li>

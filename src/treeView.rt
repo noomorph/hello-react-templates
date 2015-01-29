@@ -1,0 +1,7 @@
+<ul className="ux-treeview {this.props.className}"
+    rt-scope="this.getTreeNodeClass() as TreeNode; this.getNodesData() as nodesData"
+    rt-if="nodesData && nodesData.length">
+
+    <TreeNode rt-repeat="nodeData in nodesData"
+              rt-props="this.passNodeProps(nodeData, nodeDataIndex)" />
+</ul>
